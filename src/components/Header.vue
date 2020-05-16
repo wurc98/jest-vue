@@ -1,11 +1,11 @@
 <template>
     <div> 
-        <input v-model="value" @keyup.enter="addItem" data-test="input"/>
+        <input v-model="value" @keyup.enter="addItem" data-test="input1"/>
     </div>    
 </template>
 <script>
     export default {
-        name:"input",
+        name:"Header",
         data(){
             return {
                 value:""
