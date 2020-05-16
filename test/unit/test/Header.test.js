@@ -42,4 +42,10 @@ describe("Header.vue",()=>{
         input.trigger('keyup.enter')
         expect(wrapper.vm.$data.value).toBe('')  //不应该触发函数
     })
+
+
+    it('利用快照，进行样式提示',()=>{
+        const wrapper = shallowMount(Header)
+        expect(wrapper).toMatchSnapshot();
+    })
 })
