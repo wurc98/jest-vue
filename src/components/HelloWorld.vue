@@ -1,16 +1,16 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <Header></Header>
+    <TodoList />
   </div>
 </template>
 
 <script>
-import Header from './Header.vue'
+import TodoList from './TodoList.vue'
 export default {
   name: 'HelloWorld',
   components: {
-    Header
+    TodoList
   },
   data () {
     return {
